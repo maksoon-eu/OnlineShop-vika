@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../client/pages')));
 app.use('/styles', express.static(path.join(__dirname, '../client/styles')));
 app.use('/js', express.static(path.join(__dirname, '../client/js')));
+app.use('/img', express.static(path.join(__dirname, '../client/img')));
 
 app.use('/api/products', productRoutes);
 app.use('/api/auth', authRoutes);
